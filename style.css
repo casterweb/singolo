@@ -1,0 +1,17 @@
+@import url("style/header.css");
+@import url("style/footer.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Lato", verdana, sans-serif;
+  overflow-x: hidden;
+}
+main {
+  margin-top: 95px;
+}
