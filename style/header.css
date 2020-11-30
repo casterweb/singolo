@@ -4,6 +4,11 @@ h1 {
   margin: auto 40px;
   font-style: normal;
   font-weight: bold;
+  transition-delay: 1s;
+}
+
+#h1 {
+  transition-delay: 1s;
 }
 .navmain {
   margin: 36px 30px;
@@ -31,11 +36,6 @@ li a:hover {
   color: #ffffff;
   font-size: 12px;
 }
-.navmain a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 12px;
-}
 header {
   padding: 0px calc((100% - 1020px) / 2);
   background: #2d303a;
@@ -52,9 +52,43 @@ header {
   max-width: 1020px;
   height: 89px;
 }
+
+header img {
+  position: fixed;
+  left: 30px;
+  top: 28px;
+  z-index: 2;
+  display: none;
+  transition: 1s;
+}
 header span {
   color: #f06c64;
 }
+.menu-icon > span {
+  font-size: 25px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-left: 60px;
+  font-style: normal;
+  font-weight: bold;
+}
+header img:hover {
+  cursor: pointer;
+  box-shadow: 0 0px 15px honeydew;
+}
+.menu-icon {
+  position: fixed;
+  left: 30px;
+  top: -45px;
+  z-index: 2;
+}
+.rotate {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
 li a.active {
+  color: #f06c64;
+}
+.burger li a.active {
   color: #f06c64;
 }

@@ -1,9 +1,10 @@
+@import url("style/slider.css");
 @import url("style/header.css");
-@import url("style/footer.css");
-@import url("style/bg.css");
 @import url("style/our-service.css");
 @import url("style/portfolio.css");
-@import url("style/slider.css");
+@import url("style/footer.css");
+@import url("style/burger.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -18,4 +19,135 @@ body {
 }
 main {
   margin-top: 95px;
+}
+
+@media screen and (max-width: 1019px) {
+  .grid-service {
+    grid-template-areas:
+      "a a"
+      "a a"
+      "a a";
+  }
+  .grid_portfolio {
+    grid-template-areas:
+      "a a a"
+      "a a a"
+      "a a a"
+      "a a a";
+    margin: 20px 40px 20px 40px;
+  }
+  .slider-bg::before {
+    content: "";
+    display: block;
+    padding-top: 58.8%;
+  }
+  .slide-1::before,
+  .slide-2::before {
+    content: "";
+    display: block;
+    padding-top: 58.24%;
+  }
+  .slide-1,
+  .slide-2 {
+    height: auto;
+  }
+
+  .slide-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .phone-vertical {
+    position: absolute;
+    width: 23.52%;
+    height: 81.3%;
+    left: 10.98%;
+    top: 9.3%;
+  }
+  .phone-horizontal {
+    position: absolute;
+    width: 47.35%;
+    height: 40.3%;
+    right: 10.98%;
+    top: 30%;
+  }
+  .slider-bg {
+    height: auto;
+  }
+  #arrow-right {
+    position: absolute;
+    right: 3.82%;
+  }
+  #arrow-left {
+    position: absolute;
+    left: 3.82%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .grid-service {
+    grid-template-areas:
+      "a"
+      "a"
+      "a"
+      "a";
+  }
+  .grid_portfolio {
+    position: relative;
+    grid-template-areas:
+      "a a"
+      "a a"
+      "a a"
+      "a a";
+    margin: 30px;
+    grid-gap: 10px;
+  }
+  .grid_portfolio img:nth-child(1n + 9) {
+    display: none;
+  }
+  .service {
+    position: relative;
+    margin: 0 30px;
+  }
+  .tab {
+    margin-left: 30px;
+  }
+  .grid-service {
+    margin: 0px 20px;
+  }
+
+  .p4 {
+    display: none;
+  }
+  footer,
+  .header {
+    justify-content: center;
+  }
+  .media {
+    margin-top: 3px;
+    margin-right: 0px;
+  }
+  header img {
+    display: block;
+  }
+  .doun {
+    transform: translate(0, 66px);
+    transition: 1s;
+  }
+  .move {
+    transform: translate(278px, 0);
+    transition: 1s;
+  }
+  .header,
+  header {
+    height: 71px;
+  }
+  main {
+    margin-top: 76px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .tab li {
+    margin-right: 2px;
+    padding: 2px 4px 3px 4px;
+  }
 }
