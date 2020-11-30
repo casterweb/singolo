@@ -1,5 +1,9 @@
 @import url("style/header.css");
 @import url("style/footer.css");
+@import url("style/bg.css");
+@import url("style/our-service.css");
+@import url("style/portfolio.css");
+@import url("style/slider.css");
 * {
   margin: 0;
   padding: 0;
