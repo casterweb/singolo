@@ -1,1 +1,1 @@
-SINGOLO
+https://casterweb.github.io/singolo
