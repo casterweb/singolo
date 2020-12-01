@@ -1,0 +1,30 @@
+footer {
+  position: relative;
+  height: 36px;
+  background: #2d303a;
+  display: flex;
+  padding: 20px calc((100% - 1020px) / 2);
+  justify-content: space-between;
+}
+.p4 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 13px;
+  line-height: 18px;
+  color: #666d89;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.media {
+  margin-top: 3px;
+  margin-right: 40px;
+}
+.media li {
+  display: inline;
+  margin-left: 5px;
+}
+.media li img:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0px 15px white;
+}
