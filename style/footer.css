@@ -15,8 +15,10 @@ footer {
   margin-top: 10px;
   margin-left: 40px;
 }
-b {
+b:hover {
   cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0px 15px white;
 }
 .media {
   margin-top: 3px;
